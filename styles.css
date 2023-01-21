@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+  
+  .media-about-header {
+    display: none;
+  }
+  #nav-bar {
+    margin-left: 5%;
+    margin-top: 5%; 
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: block;
+    position: absolute;
+    background:#5908ee;
+    top: 0;
+    line-height: 60px;
+    height: 100vh;
+    font-size: 32px;
+    text-align: left;
+    font-weight: 600;
+    opacity: 0.95;
+    padding-top: 3.5rem;
+    padding-left: 5%;
+    list-style: none;
+  } 
+  
+  .humberger.active {
+    z-index: 2;
+    display: block;
+    margin-left: 90%;
+  }
+  
+  .nav-links.active {
+    left: 0;
+    width: 100%;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .img-container {
+    display:none;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #1a1c20;
+  }
+  
+
+  .humberger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0%;
+    margin-bottom: 3%;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 20px;
+    height: 4px;
+    margin-bottom: 4px;
+    background: gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .humberger.active .bar1 {
+    transform: translateY(8px) rotate(45deg);
+    background: rgb(224, 217, 217);
+  }
+  
+  .humberger.active .bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+    background: rgb(224, 217, 217);
+  }
+  
+  .humberger.active .bar2 {
+    opacity: 0;
+  }
+
+  .red-border {
+    display: none;
+    
+} 
+
+
+  @media screen and (min-width: 768px){ 
+
+    .media-about-header {
+      display: flex;
+      column-gap: 1%;
+      background-color: rgb(48, 44, 44);
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 5%;
+    }
+
+    .header1-text {
+      color: white;
+    }
+
+    .humberger {
+        display: none;
+   } 
+
+   .home-style > a:visited {
+    color: red;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    column-gap: 9%;
+    margin-right: 9%;
+   line-height: 4vh;
+   margin-top: 1rem;
+  }
+
+  .img-container {
+    display: flex;
+    align-items:flex-start;
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  #header-img {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  #nav-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    height: 3vh;
+    margin-right: 8%;
+  }
+
+  #header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(247, 248, 245);
+    z-index: 1000;
+  }
+
+  .red-border {
+    color: orangered;
+    border: orangered 3px solid;
+    display: flex;
+    align-items:center;
+    padding: 4% 2%;
+    margin-bottom: 3rem;
+    width:200px;
+    
+} 
+  }
