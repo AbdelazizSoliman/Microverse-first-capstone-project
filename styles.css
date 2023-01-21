@@ -48,7 +48,6 @@ html {
   margin-left: 90%;
 }
 
-
 li {
   list-style: none;
 }
@@ -61,7 +60,6 @@ li a {
   text-decoration: none;
   color: #1a1c20;
 }
-
 
 .humberger {
   cursor: pointer;
@@ -105,13 +103,6 @@ li a {
 }
 
 .red-border {
-  /* color: orangered;
-    border: orangered 3px solid;
-    display: flex;
-    align-items:center;
-    padding: 4% 2%;
-    margin-bottom: 9%;
-    width:200px; */
   display: none;
 }
 
@@ -187,11 +178,11 @@ li a {
   margin-top: 9%;
   background-color: #ef513c;
   color: white;
-  padding: 5%;
+  padding: 2%;
   font-size: 30px;
   margin-bottom: 3%;
   text-decoration: underline;
-  width: 80%;
+  width: 50%;
   text-align: center;
 }
 
@@ -203,6 +194,33 @@ li a {
 
 .program-text {
   color: #ef513c;
+}
+
+.sponser {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sponser h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors-companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sponsors-companies li {
+  display: grid;
+}
+
+.company-img {
+  display: grid;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -290,5 +308,24 @@ li a {
     padding: 0;
     height: 100%;
     background-size: 100% 100%;
+  }
+
+  .sponser {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000bd;
+  }
+
+  .sponser h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsors-companies {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2%;
   }
 }
