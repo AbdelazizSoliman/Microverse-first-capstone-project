@@ -55,9 +55,10 @@ conferenceSpeakers.forEach((member) => {
       <ul class="speaker-members">
           <li class="members">
            <img src="${member.speakerImage}" alt="">
-            <div class="team-content">
+            <div class="">
               <h3>${member.name}</h3>
-              <h6 href="#">${member.speakerInfo}</h6>
+              <h5 href="#">${member.speakerInfo}</h5>
+              <hr>
               <p>${member.detailes}</p>
             </div>
           </li>

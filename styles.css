@@ -175,14 +175,14 @@ li a {
 }
 
 .button {
-  margin-top: 9%;
+  margin-top: 4%;
   background-color: #ef513c;
   color: white;
-  padding: 2%;
-  font-size: 30px;
+  padding: 6%;
+  font-size: 20px;
   margin-bottom: 3%;
-  text-decoration: underline;
-  width: 50%;
+  text-decoration: none;
+  width: 60%;
   text-align: center;
 }
 
@@ -196,31 +196,65 @@ li a {
   color: #ef513c;
 }
 
-.sponser {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.sponser h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sponsors-companies {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sponsors-companies li {
-  display: grid;
-}
-
 .company-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vh;
+  height: 6vh;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+}
+
+.logo-img {
+  margin-right: 8%;
+}
+
+.sponser {
   display: grid;
   align-items: center;
+  background-color: #1a1c20;
+}
+
+.spk-title {
+  padding: 2% 0 0 38%;
+}
+
+.sponsers-text {
+  display: flex;
+  align-items: center;
+  padding-left: 45%;
+  padding-top: 3rem;
+  color: #fff;
+}
+
+.speakers {
+  display: grid;
+  grid-template-columns: repeat(0, 1fr);
+  padding: 2rem 5rem;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 6%;
+}
+
+.members h5 {
+  color: orangered;
+  padding: 5% 0;
+}
+
+.members hr {
+  width: 20%;
+  padding-left: 20%;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,7 +333,8 @@ li a {
     flex-direction: row;
     column-gap: 1%;
     flex: 1 1 0;
-    align-items: flex-start;
+
+    /* align-items: flex-start; */
   }
 
   .program-detailes {
@@ -310,22 +345,63 @@ li a {
     background-size: 100% 100%;
   }
 
-  .sponser {
-    display: flex;
-    flex-direction: column;
-    background-color: #000000bd;
+  #sponser {
+    background-color: #15151bbd;
+    margin-bottom: 5%;
+    padding-bottom: 0.5%;
   }
 
-  .sponser h2 {
+  .sponser {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .sponsers {
+    display: flex;
+    margin-left: 12rem;
+    margin-bottom: 5rem;
+  }
+
   .sponsors-companies {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 2%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .spk-title {
+    padding: 2% 0 0 38%;
+  }
+
+  .sponsers-text {
+    display: flex;
+    align-items: center;
+    padding-left: 45%;
+    padding-top: 3rem;
+    color: #fff;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 5rem;
+  }
+
+  .members {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 6%;
+  }
+
+  .members h5 {
+    color: orangered;
+    padding: 5% 0;
+  }
+
+  .members hr {
+    width: 20%;
+    padding-left: 20%;
   }
 }
