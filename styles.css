@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -286,7 +288,7 @@ li a {
 
 .about-page {
   width: 100%;
-z-index: 5;
+  z-index: 5;
 }
 
 .about {
@@ -315,6 +317,7 @@ z-index: 5;
   padding-top: 3%;
   color: rgb(4, 11, 48);
 }
+
 .contact {
   font-size: 20px;
   font-weight: lighter;
@@ -331,14 +334,13 @@ z-index: 5;
 }
 
 .about-titles p {
-background-color: rgb(233, 230, 230);
+  background-color: rgb(233, 230, 230);
   color: rgba(24, 22, 22, 0.884);
   border: solid 5px white;
   padding: 3vh;
   font-weight: 800;
   height: 100%;
   line-height: 4vh;
-  width: 50%;
   text-align: left;
   margin-left: 10%;
   width: 80%;
@@ -358,7 +360,6 @@ background-color: rgb(233, 230, 230);
 
 .about-logo p {
   font-weight: 600;
-  
 }
 
 .about-img {
@@ -530,23 +531,25 @@ background-color: rgb(233, 230, 230);
     padding-top: 2rem;
   }
 
-.about-page {
-  background-image: url("./img/bg.jpg;")
-}
+  .about-page {
+    background-image: url("./img/bg.jpg;");
+  }
 
-.title {
-  font-size: 30px;
-}
-.conference-img {
-  display: flex;
-  column-gap: 2%;
-  align-items: center;
-  width: 80%;
-  justify-content: center;
-}
-.about-footer {
-  background-color: black;
-  color: white;
-  justify-content: center;
-}
+  .title {
+    font-size: 30px;
+  }
+
+  .conference-img {
+    display: flex;
+    column-gap: 2%;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .about-footer {
+    background-color: black;
+    color: white;
+    justify-content: center;
+  }
 }
