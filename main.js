@@ -55,9 +55,9 @@ conferenceSpeakers.forEach((member) => {
       <ul class="speaker-members">
           <li class="members">
            <img src="${member.speakerImage}" alt="">
-            <div class="">
+            <div class="spk-mem-info">
               <h3>${member.name}</h3>
-              <h5 href="#">${member.speakerInfo}</h5>
+              <h5>${member.speakerInfo}</h5>
               <hr>
               <p>${member.detailes}</p>
             </div>
@@ -65,22 +65,3 @@ conferenceSpeakers.forEach((member) => {
        </ul>
       `;
 });
-
-//   const speakerMembers = document.querySelector('.speakers');
-//   conferenceSpeakers.forEach((member, id) => {
-//     speakerMembers.innerHTML += `<section class="speaker ${member.classNm}">
-//     <div class="speaker-container ${speakerMembers} ">
-//     <img
-//     class="speaker-img"
-//     src=${speakerImage}
-//     alt="speaker's image"
-//     />
-//     <div class="speaker-des">
-//     <h3>${name}</h3>
-//     <p class="speaker-text1">${speakerInfo}</p>
-//     <hr class="line2" />
-//     <p class="speaker-text2">${detailes}</p>
-//     </div>
-//     </div>
-//     `;
-// });
